@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639616014633,
+  "lastUpdate": 1640646945820,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "77563348+emersonmacro@users.noreply.github.com",
-            "name": "emersonmacro",
-            "username": "emersonmacro"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5a49575b03ceb2d8bf4946f521cf065b01c6ac5f",
-          "message": "tx: remove event listener and add datafee caching with hardfork (#1550)\n\n* tx: remove event listener for hardforkChanged\r\n\r\n* tx: add back dataFee caching",
-          "timestamp": "2021-11-01T12:06:11+01:00",
-          "tree_id": "39e9dfbdb6fdc10b4ec2bcfc691c7c3fb659b05d",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5a49575b03ceb2d8bf4946f521cf065b01c6ac5f"
-        },
-        "date": 1635765156331,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 14303,
-            "range": "±3.45%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 13430,
-            "range": "±6.53%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 14483,
-            "range": "±3.52%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 14501,
-            "range": "±3.84%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 11146,
-            "range": "±11.25%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 13494,
-            "range": "±4.28%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 14025,
-            "range": "±4.00%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 13828,
-            "range": "±4.29%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 13615,
-            "range": "±4.78%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 13199,
-            "range": "±6.85%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -1903,6 +1809,65 @@ window.BENCHMARK_DATA = {
             "range": "±15.84%",
             "unit": "ops/sec",
             "extra": "55 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3751bbd68a6f20c620c03d874abd1e2ea0895f50",
+          "message": "common/vm: add EIP-3855, PUSH0 instruction (#1616)\n\n* common/vm: add EIP-3855, PUSH0 instruction\r\n\r\n* vm: remove breaking changes from runCode",
+          "timestamp": "2021-12-28T00:11:26+01:00",
+          "tree_id": "4d8c46e93e50b7d7c014a97373c6a09c9b9dde6e",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/3751bbd68a6f20c620c03d874abd1e2ea0895f50"
+        },
+        "date": 1640646944559,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 20769,
+            "range": "±2.45%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 19838,
+            "range": "±8.85%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 20759,
+            "range": "±1.22%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 20846,
+            "range": "±3.56%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 13676,
+            "range": "±19.95%",
+            "unit": "ops/sec",
+            "extra": "53 samples"
           }
         ]
       }

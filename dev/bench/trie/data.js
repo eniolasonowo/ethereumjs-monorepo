@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1640646945003,
+  "lastUpdate": 1641242407081,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "77563348+emersonmacro@users.noreply.github.com",
-            "name": "emersonmacro",
-            "username": "emersonmacro"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "b5727a0e60f3d67a84202235187811aaca4ea59f",
-          "message": "monorepo: update nyc and verdaccio (#1547)\n\n* monorepo: update nyc and verdaccio\r\n\r\n* Monorepo: updated verdaccio and npm-auth-to-token dev dependencies to use caret dependency ranges\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-11-01T12:45:33+01:00",
-          "tree_id": "d8d501a139ea66acefd2de2692dbda9a536173c9",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/b5727a0e60f3d67a84202235187811aaca4ea59f"
-        },
-        "date": 1635767461821,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 12280,
-            "range": "±12.56%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 14076,
-            "range": "±2.75%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 12700,
-            "range": "±3.79%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 6621,
-            "range": "±20.77%",
-            "unit": "ops/sec",
-            "extra": "45 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 13334,
-            "range": "±4.23%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1125,
-            "range": "±6.85%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 133,
-            "range": "±88.48%",
-            "unit": "ops/sec",
-            "extra": "42 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 121,
-            "range": "±9.58%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 11.24,
-            "range": "±119.19%",
-            "unit": "ops/sec",
-            "extra": "26 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±123.64%",
             "unit": "ops/sec",
             "extra": "14 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77563348+emersonmacro@users.noreply.github.com",
+            "name": "emersonmacro",
+            "username": "emersonmacro"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "23a7f35c471d7bc3797b3452d9be0947000b6102",
+          "message": "common: add support for new Sepolia chain (#1581)\n\n* common: add support for new Sepolia chain\r\n* common: updates in sepolia.json chain config\r\n* common: sepolia configuration fixes\r\n* add initialBaseFee logic to block header constructor\r\n* block: improve londonHfBlock var name for clarity\r\n* common: add require for sepolia genesisStates\r\n* block: fix tests with initialBaseFeePerGas\r\n* use Hardfork enum\r\n* organize test util code\r\nCo-authored-by: holgerd77 <Holger.Drewes@gmail.com>\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
+          "timestamp": "2022-01-03T12:35:17-08:00",
+          "tree_id": "acc420dc74431f4b3f2b415467635dceff83e39f",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/23a7f35c471d7bc3797b3452d9be0947000b6102"
+        },
+        "date": 1641242406503,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 14255,
+            "range": "±12.95%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 16201,
+            "range": "±1.43%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 11288,
+            "range": "±16.87%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 9640,
+            "range": "±30.61%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 15772,
+            "range": "±2.59%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1285,
+            "range": "±5.99%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 102,
+            "range": "±103.67%",
+            "unit": "ops/sec",
+            "extra": "24 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 145,
+            "range": "±6.43%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 23.27,
+            "range": "±63.18%",
+            "unit": "ops/sec",
+            "extra": "16 samples"
           }
         ]
       }

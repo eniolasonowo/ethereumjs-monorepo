@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641340143583,
-  "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
+  "lastUpdate": 1642922003217,
+  "repoUrl": "https://github.com/eniolasonowo/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5a0ab3012a9cefc8d384eb5edcbd524cabca4c73",
-          "message": "vm benchmarks: skip blocks reporting false positives for alert threshold (#1546)\n\n* increase vm benchmarks threshold from 200% to 270% to cover false positives\r\n\r\n* add prettier.config.js to root, run on config and workflow files\r\n\r\n* Revert \"increase vm benchmarks threshold from 200% to 270% to cover false positives\"\r\n\r\nThis reverts commit 1621ae520e99a04e9e51ca16033c8e1f05e84855.\r\n\r\n* skip blocks that frequently trip alert threshold",
-          "timestamp": "2021-11-03T18:00:04+01:00",
-          "tree_id": "c8a3dd69581656488191363558d5668254318c0a",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5a0ab3012a9cefc8d384eb5edcbd524cabca4c73"
-        },
-        "date": 1635959097480,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 15043,
-            "range": "±13.42%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 16313,
-            "range": "±1.99%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 11648,
-            "range": "±14.95%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 8904,
-            "range": "±28.24%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 15278,
-            "range": "±2.36%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1132,
-            "range": "±7.01%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 114,
-            "range": "±104.71%",
-            "unit": "ops/sec",
-            "extra": "34 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 107,
-            "range": "±27.22%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.83,
-            "range": "±127.79%",
-            "unit": "ops/sec",
-            "extra": "25 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±106.84%",
             "unit": "ops/sec",
             "extra": "30 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "eb5bb56013163fbad5fb59c6b9f021a3c0fd2aaa",
+          "message": "ci: fix node-versions run for node <16 (#1653)\n\n* re-add updating to npm v7 for node versions <16\r\n* only upgrade npm for node v <16\r\n* fix bin/rlp js: node 12 doesn't support ES11 which added support for nullish coalescing operator (??) so we'll use ternary here\r\nalternatively we could write this file in TS and compile to e.g. dist/bin/rlp (like we do in the client bin), but maybe if the file gets more complicated, in its current state i don't think it's so neccessary\r\n* use same errorMsg format for JSON.parse, remove unneeded extra Uint8Array.from (already is uint8array)",
+          "timestamp": "2022-01-19T10:37:25-08:00",
+          "tree_id": "f0e49214c8ef4d7fc012c32f0fc94352faa86356",
+          "url": "https://github.com/eniolasonowo/ethereumjs-monorepo/commit/eb5bb56013163fbad5fb59c6b9f021a3c0fd2aaa"
+        },
+        "date": 1642922001984,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 13476,
+            "range": "±18.09%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 17754,
+            "range": "±5.25%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 17067,
+            "range": "±2.24%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 8421,
+            "range": "±19.72%",
+            "unit": "ops/sec",
+            "extra": "40 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 8659,
+            "range": "±21.01%",
+            "unit": "ops/sec",
+            "extra": "62 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 896,
+            "range": "±6.62%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 183,
+            "range": "±11.35%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 11.38,
+            "range": "±202.17%",
+            "unit": "ops/sec",
+            "extra": "9 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 14.97,
+            "range": "±25.98%",
+            "unit": "ops/sec",
+            "extra": "32 samples"
           }
         ]
       }
